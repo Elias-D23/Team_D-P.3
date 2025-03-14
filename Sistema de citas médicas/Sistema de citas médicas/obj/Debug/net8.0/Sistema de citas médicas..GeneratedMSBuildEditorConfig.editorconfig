@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\elias\C#Practices\Team_D-P.3\Sistema de citas médicas\Sistema de citas médicas
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/elias/C\#Practices/Team_D-P.3/Sistema de citas médicas/Sistema de citas médicas/Views/Citas/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0YXNcQ3JlYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/elias/C\#Practices/Team_D-P.3/Sistema de citas médicas/Sistema de citas médicas/Views/Citas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0YXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

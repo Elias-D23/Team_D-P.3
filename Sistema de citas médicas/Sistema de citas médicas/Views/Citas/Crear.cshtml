@@ -1,0 +1,43 @@
+﻿@model Sistema_de_citas_médicas_.Models.PacienteCitasViewModel
+
+<h2>Registrar Nuevo Paciente y Cita</h2>
+
+<form asp-action="Crear" method="post">
+    <fieldset>
+        <legend>Datos del Paciente</legend>
+        <label>Nombre:</label>
+        <input asp-for="Paciente.Nombre" class="form-control" required />
+
+        <label>Cédula:</label>
+        <input asp-for="Paciente.Cedula" class="form-control" required />
+
+        <label>Fecha de Nacimiento:</label>
+        <input asp-for="Paciente.FechaNacimiento" type="date" class="form-control" required />
+
+        <label>Teléfono:</label>
+        <input asp-for="Paciente.Telefono" class="form-control" required />
+
+        <label>Correo Electrónico:</label>
+        <input asp-for="Paciente.CorreoElectronico" class="form-control" required />
+
+        <label>Contraseña:</label>
+        <input asp-for="Paciente.Contrasena" type="password" class="form-control" required />
+    </fieldset>
+
+    <fieldset>
+        <legend>Datos de la Cita</legend>
+        <label>Fecha y Hora:</label>
+        <input asp-for="Citas[0].FechaHora" type="datetime-local" class="form-control" required />
+
+        <label>Médico:</label>
+        <input asp-for="Citas[0].Medico" class="form-control" required />
+
+        <label>Especialidad:</label>
+        <input asp-for="Citas[0].Especialidad" class="form-control" required />
+
+        <label>Requisitos Especiales:</label>
+        <input asp-for="Citas[0].RequisitosEspeciales" class="form-control" />
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

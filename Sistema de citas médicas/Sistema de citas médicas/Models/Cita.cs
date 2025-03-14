@@ -4,7 +4,7 @@
     {
 
         public int id { get; set; }
-        public int ClienteId { get; set; } // Clave foránea
+        public int PacienteId { get; set; } // Clave foránea
         public DateTime FechaHora { get; set; }
         public string Medico { get; set; }
         public string Especialidad { get; set; }

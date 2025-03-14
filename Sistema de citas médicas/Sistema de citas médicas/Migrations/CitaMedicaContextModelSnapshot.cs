@@ -2,7 +2,6 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Sistema_de_citas_médicas_.Data;
 
@@ -16,91 +15,83 @@ namespace Sistema_de_citas_médicas_.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.3")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
-
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+            modelBuilder.HasAnnotation("ProductVersion", "9.0.3");
 
             modelBuilder.Entity("Sistema_de_citas_médicas_.Models.Cita", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
-
-                    b.Property<int>("ClienteId")
-                        .HasColumnType("int");
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Especialidad")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("FechaHora")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Medico")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("PacienteId")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("RequisitosEspeciales")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("TEXT");
 
                     b.HasKey("id");
 
-                    b.HasIndex("ClienteId");
+                    b.HasIndex("PacienteId");
 
                     b.ToTable("Citas");
                 });
 
-            modelBuilder.Entity("Sistema_de_citas_médicas_.Models.Cliente", b =>
+            modelBuilder.Entity("Sistema_de_citas_médicas_.Models.Paciente", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Cedula")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Contrasena")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("CorreoElectronico")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("FechaNacimiento")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Telefono")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("TEXT");
 
                     b.HasKey("id");
 
-                    b.ToTable("Clientes");
+                    b.ToTable("Pacientes");
                 });
 
             modelBuilder.Entity("Sistema_de_citas_médicas_.Models.Cita", b =>
                 {
-                    b.HasOne("Sistema_de_citas_médicas_.Models.Cliente", null)
+                    b.HasOne("Sistema_de_citas_médicas_.Models.Paciente", null)
                         .WithMany("Citas")
-                        .HasForeignKey("ClienteId")
+                        .HasForeignKey("PacienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Sistema_de_citas_médicas_.Models.Cliente", b =>
+            modelBuilder.Entity("Sistema_de_citas_médicas_.Models.Paciente", b =>
                 {
                     b.Navigation("Citas");
                 });

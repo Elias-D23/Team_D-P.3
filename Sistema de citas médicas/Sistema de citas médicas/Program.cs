@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 //Connection DB.
 builder.Services.AddDbContext<CitaMedicaContext>(options => {
 
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionSQL"));
+    options.UseSqlite(builder.Configuration.GetConnectionString("ConnectionSQL"));
 });
 
 

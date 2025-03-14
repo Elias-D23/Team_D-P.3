@@ -1,4 +1,4 @@
-﻿@model List<Sistema_de_citas_médicas_.Models.ClienteCitasViewModel>
+﻿@model List<Sistema_de_citas_médicas_.Models.PacienteCitasViewModel>
 
 <h2>Clientes y Citas</h2>
 
@@ -14,19 +14,19 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var clienteCitas in Model)
+        @foreach (var pacienteCitas in Model)
         {
             <tr>
-                <td>@clienteCitas.Cliente.Nombre</td>
-                <td>@clienteCitas.Cliente.Cedula</td>
-                <td>@clienteCitas.Cliente.FechaNacimiento.ToShortDateString()</td>
-                <td>@clienteCitas.Cliente.Telefono</td>
-                <td>@clienteCitas.Cliente.CorreoElectronico</td>
+                <td>@pacienteCitas.Paciente.Nombre</td>
+                <td>@pacienteCitas.Paciente.Cedula</td>
+                <td>@pacienteCitas.Paciente.FechaNacimiento.ToShortDateString()</td>
+                <td>@pacienteCitas.Paciente.Telefono</td>
+                <td>@pacienteCitas.Paciente.CorreoElectronico</td>
                 <td>
-                    @if (clienteCitas.Citas != null && clienteCitas.Citas.Any())
+                    @if (pacienteCitas.Citas != null && pacienteCitas.Citas.Any())
                     {
                         <ul>
-                            @foreach (var cita in clienteCitas.Citas)
+                            @foreach (var cita in pacienteCitas.Citas)
                             {
                                 <li>
                                     @cita.FechaHora.ToString("dd/MM/yyyy HH:mm"),
@@ -46,3 +46,54 @@
         }
     </tbody>
 </table>
+
+
+@* 
+<h2>Clientes y Citas</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Cédula</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Teléfono</th>
+            <th>Correo Electrónico</th>
+            <th>Citas</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pacienteCitas in Model)
+        {
+            <tr>
+                <td>@pacienteCitas.Paciente.Nombre</td>
+                <td>@pacienteCitas.Paciente.Cedula</td>
+                <td>@pacienteCitas.Paciente.FechaNacimiento.ToShortDateString()</td>
+                <td>@pacienteCitas.Paciente.Telefono</td>
+                <td>@pacienteCitas.Paciente.CorreoElectronico</td>
+                <td>
+                    @if (pacienteCitas.Citas != null && pacienteCitas.Citas.Any())
+                    {
+                        <ul>
+                            @foreach (var cita in pacienteCitas.Citas)
+                            {
+                                <li>
+                                    @cita.FechaHora.ToString("dd/MM/yyyy HH:mm"),
+                                    @cita.Medico,
+                                    @cita.Especialidad,
+                                    @cita.RequisitosEspeciales
+                                </li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <p>Sin citas</p>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+*@

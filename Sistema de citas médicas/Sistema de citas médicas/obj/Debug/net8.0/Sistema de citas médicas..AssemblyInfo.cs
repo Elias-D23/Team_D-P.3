@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sistema de citas médicas.")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c55db3a18127a75f24078de197e76302e5824fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af37f8a8ad36a4afaf977742450a69b70a19f542")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sistema de citas médicas.")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sistema de citas médicas.")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

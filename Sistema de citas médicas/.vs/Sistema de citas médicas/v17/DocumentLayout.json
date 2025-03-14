@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|c:\\users\\elias\\c#practices\\team_d-p.3\\sistema de citas m\u00E9dicas\\sistema de citas m\u00E9dicas\\views\\citas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|solutionrelative:sistema de citas m\u00E9dicas\\views\\citas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|c:\\users\\elias\\c#practices\\team_d-p.3\\sistema de citas m\u00E9dicas\\sistema de citas m\u00E9dicas\\citamedica.db||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|solutionrelative:sistema de citas m\u00E9dicas\\citamedica.db||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|c:\\users\\elias\\c#practices\\team_d-p.3\\sistema de citas m\u00E9dicas\\sistema de citas m\u00E9dicas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|solutionrelative:sistema de citas m\u00E9dicas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|c:\\users\\elias\\c#practices\\team_d-p.3\\sistema de citas m\u00E9dicas\\sistema de citas m\u00E9dicas\\views\\citas\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|solutionrelative:sistema de citas m\u00E9dicas\\views\\citas\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|c:\\users\\elias\\c#practices\\team_d-p.3\\sistema de citas m\u00E9dicas\\sistema de citas m\u00E9dicas\\controllers\\citascontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|solutionrelative:sistema de citas m\u00E9dicas\\controllers\\citascontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|c:\\users\\elias\\c#practices\\team_d-p.3\\sistema de citas m\u00E9dicas\\sistema de citas m\u00E9dicas\\models\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|solutionrelative:sistema de citas m\u00E9dicas\\models\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|c:\\users\\elias\\c#practices\\team_d-p.3\\sistema de citas m\u00E9dicas\\sistema de citas m\u00E9dicas\\views\\citas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|solutionrelative:sistema de citas m\u00E9dicas\\views\\citas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|c:\\users\\elias\\c#practices\\team_d-p.3\\sistema de citas m\u00E9dicas\\sistema de citas m\u00E9dicas\\models\\pacientecitasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|solutionrelative:sistema de citas m\u00E9dicas\\models\\pacientecitasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|c:\\users\\elias\\c#practices\\team_d-p.3\\sistema de citas m\u00E9dicas\\sistema de citas m\u00E9dicas\\models\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|solutionrelative:sistema de citas m\u00E9dicas\\models\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|c:\\users\\elias\\c#practices\\team_d-p.3\\sistema de citas m\u00E9dicas\\sistema de citas m\u00E9dicas\\data\\citamedicacontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A81D4EFB-4405-48E6-AB8E-4B250408D252}|Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas..csproj|solutionrelative:sistema de citas m\u00E9dicas\\data\\citamedicacontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +50,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Sistema de citas m\u00E9dicas\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Sistema de citas m\u00E9dicas\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-12T16:09:17.092Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Views\\Citas\\Index.cshtml",
-              "RelativeDocumentMoniker": "Sistema de citas m\u00E9dicas\\Views\\Citas\\Index.cshtml",
-              "ToolTip": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Views\\Citas\\Index.cshtml",
-              "RelativeToolTip": "Sistema de citas m\u00E9dicas\\Views\\Citas\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-12T16:07:57.48Z",
-              "EditorCaption": ""
+              "Title": "CitaMedica.db",
+              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\CitaMedica.db",
+              "RelativeDocumentMoniker": "Sistema de citas m\u00E9dicas\\CitaMedica.db",
+              "ToolTip": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\CitaMedica.db",
+              "RelativeToolTip": "Sistema de citas m\u00E9dicas\\CitaMedica.db",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGHSURBVDhPjZPNSxtBGIefXTcSYlv2T1CKWAVFSgsVvClCexBEqteK5yJEl22gheLBD4KCIPpneGwp4hcKNdQqiGDxkNBW8WI\u002BDtltkp2Ml\u002B6iO8b4wMB8/N6HeWFG4z8J20qDbPbXKlrGqzKUTCaPgi0pZTBP2FOyXC7XHAl7Sk5//pSzLKs7KAL0m4t6vBsbNx83RTdvSh4sME2T1ZVlXNc1DV1uhs\u002BVFtZ3f8hvOymlFb8dv065wclZhq/b\u002B2Rzea6yOda\u002BbPHz\u002BDQcC1AEhq7jOC4vutp52d2B4zoYhhILUE48IahUyoiqoCoEXqWC54lwLEARlEolNGBrL8XG7nc0DVIHhzjuv3AU7hI873zGyOAATx7FEJ7g4vKc33//MLe4xOmvs3BcFfgMvenndV8vhXyBmY82\u002BWyWaLQxHKstACgWHQwd3sctIpGGWy/X515BW\u002BtTPsQn6O15xcLcDC3N6le5VwDQFIsx\u002BnY4vB1QV1APzZ8k7Mk0aOod70RmZucXWgCuAZnTw6qHi\u002BiqAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-03-14T19:40:36.823Z"
             },
             {
               "$type": "Document",
@@ -61,9 +67,81 @@
               "RelativeDocumentMoniker": "Sistema de citas m\u00E9dicas\\Controllers\\CitasController .cs",
               "ToolTip": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Controllers\\CitasController .cs",
               "RelativeToolTip": "Sistema de citas m\u00E9dicas\\Controllers\\CitasController .cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAWwBcAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T16:06:06.172Z"
+              "WhenOpened": "2025-03-14T19:14:17.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CitaMedicaContext .cs",
+              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Data\\CitaMedicaContext .cs",
+              "RelativeDocumentMoniker": "Sistema de citas m\u00E9dicas\\Data\\CitaMedicaContext .cs",
+              "ToolTip": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Data\\CitaMedicaContext .cs",
+              "RelativeToolTip": "Sistema de citas m\u00E9dicas\\Data\\CitaMedicaContext .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T19:13:25.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PacienteCitasViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Models\\PacienteCitasViewModel.cs",
+              "RelativeDocumentMoniker": "Sistema de citas m\u00E9dicas\\Models\\PacienteCitasViewModel.cs",
+              "ToolTip": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Models\\PacienteCitasViewModel.cs",
+              "RelativeToolTip": "Sistema de citas m\u00E9dicas\\Models\\PacienteCitasViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T19:12:43.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Paciente.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Models\\Paciente.cs",
+              "RelativeDocumentMoniker": "Sistema de citas m\u00E9dicas\\Models\\Paciente.cs",
+              "ToolTip": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Models\\Paciente.cs",
+              "RelativeToolTip": "Sistema de citas m\u00E9dicas\\Models\\Paciente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T19:12:30.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cita.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Models\\Cita.cs",
+              "RelativeDocumentMoniker": "Sistema de citas m\u00E9dicas\\Models\\Cita.cs",
+              "ToolTip": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Models\\Cita.cs",
+              "RelativeToolTip": "Sistema de citas m\u00E9dicas\\Models\\Cita.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T19:12:24.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Views\\Citas\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sistema de citas m\u00E9dicas\\Views\\Citas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Views\\Citas\\Index.cshtml",
+              "RelativeToolTip": "Sistema de citas m\u00E9dicas\\Views\\Citas\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T19:11:46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Views\\Citas\\Crear.cshtml",
+              "RelativeDocumentMoniker": "Sistema de citas m\u00E9dicas\\Views\\Citas\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas m\u00E9dicas\\Sistema de citas m\u00E9dicas\\Views\\Citas\\Crear.cshtml",
+              "RelativeToolTip": "Sistema de citas m\u00E9dicas\\Views\\Citas\\Crear.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T19:11:43.578Z"
             }
           ]
         }
