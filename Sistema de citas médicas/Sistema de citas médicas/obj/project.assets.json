@@ -4734,27 +4734,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\elias\\.nuget\\packages\\": {}
+    "/Users/dalvin/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas médicas\\Sistema de citas médicas\\Sistema de citas médicas..csproj",
+      "projectUniqueName": "/Users/dalvin/Developer/ITLA-shits/Team_D-P.3/Sistema de citas médicas/Sistema de citas médicas/Sistema de citas médicas..csproj",
       "projectName": "Sistema de citas médicas.",
-      "projectPath": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas médicas\\Sistema de citas médicas\\Sistema de citas médicas..csproj",
-      "packagesPath": "C:\\Users\\elias\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elias\\C#Practices\\Team_D-P.3\\Sistema de citas médicas\\Sistema de citas médicas\\obj\\",
+      "projectPath": "/Users/dalvin/Developer/ITLA-shits/Team_D-P.3/Sistema de citas médicas/Sistema de citas médicas/Sistema de citas médicas..csproj",
+      "packagesPath": "/Users/dalvin/.nuget/packages/",
+      "outputPath": "/Users/dalvin/Developer/ITLA-shits/Team_D-P.3/Sistema de citas médicas/Sistema de citas médicas/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\elias\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/dalvin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4772,7 +4769,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -4804,6 +4802,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.14, 8.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
+            "version": "[8.0.14, 8.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.14, 8.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -4812,7 +4824,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

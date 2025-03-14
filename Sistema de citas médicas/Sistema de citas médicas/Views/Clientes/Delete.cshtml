@@ -1,0 +1,87 @@
+@model Sistema_de_citas_médicas_.Models.Cliente
+
+@{
+    ViewData["Title"] = "Eliminar Paciente";
+}
+
+<h1>Eliminar Paciente</h1>
+
+<h3>¿Está seguro de que desea eliminar este paciente?</h3>
+<div class="alert alert-warning">
+    <strong>Advertencia:</strong> Esta acción eliminará al paciente y todas sus citas asociadas. Esta operación no se
+    puede deshacer.
+</div>
+
+<div>
+    <h4>Datos del Paciente</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            Nombre
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class="col-sm-3">
+            Cédula
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Cedula)
+        </dd>
+        <dt class="col-sm-3">
+            Fecha de Nacimiento
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.FechaNacimiento)
+        </dd>
+        <dt class="col-sm-3">
+            Teléfono
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+        <dt class="col-sm-3">
+            Correo Electrónico
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.CorreoElectronico)
+        </dd>
+    </dl>
+
+    <h4>Citas Asociadas</h4>
+    <hr />
+    @if (Model.Citas != null && Model.Citas.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Fecha y Hora</th>
+                    <th>Médico</th>
+                    <th>Especialidad</th>
+                    <th>Requisitos Especiales</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var cita in Model.Citas)
+                {
+                    <tr>
+                        <td>@cita.FechaHora.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>@cita.Medico</td>
+                        <td>@cita.Especialidad</td>
+                        <td>@cita.RequisitosEspeciales</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>El paciente no tiene citas programadas.</p>
+    }
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="id" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" />
+        <a asp-controller="Citas" asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

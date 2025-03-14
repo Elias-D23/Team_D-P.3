@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: Sistema de citas médicas/Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__ConnectionSQL=Server=db;Database=CitaMedica_DB;User Id=sa;Password=YourStrong!Password123;TrustServerCertificate=True;
+    restart: always
+
+  db:
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    platform: linux/arm64
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong!Password123
+      - MSSQL_PID=Developer
+    volumes:
+      - sqldata:/var/opt/mssql
+    restart: always
+
+volumes:
+  sqldata:
+    driver: local

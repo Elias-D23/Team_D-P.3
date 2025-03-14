@@ -1,0 +1,9 @@
+/Users/dalvin/Developer/ITLA-shits/Team_D-P.3/Sistema de citas médicas/Sistema de citas médicas/obj/Release/net8.0/Sistema de citas médicas..csproj.AssemblyReference.cache
+/Users/dalvin/Developer/ITLA-shits/Team_D-P.3/Sistema de citas médicas/Sistema de citas médicas/obj/Release/net8.0/Sistema de citas médicas..GeneratedMSBuildEditorConfig.editorconfig
+/Users/dalvin/Developer/ITLA-shits/Team_D-P.3/Sistema de citas médicas/Sistema de citas médicas/obj/Release/net8.0/Sistema de citas médicas..AssemblyInfoInputs.cache
+/Users/dalvin/Developer/ITLA-shits/Team_D-P.3/Sistema de citas médicas/Sistema de citas médicas/obj/Release/net8.0/Sistema de citas médicas..AssemblyInfo.cs
+/Users/dalvin/Developer/ITLA-shits/Team_D-P.3/Sistema de citas médicas/Sistema de citas médicas/obj/Release/net8.0/Sistema de citas médicas..csproj.CoreCompileInputs.cache
+/Users/dalvin/Developer/ITLA-shits/Team_D-P.3/Sistema de citas médicas/Sistema de citas médicas/obj/Release/net8.0/Sistema de citas médicas..MvcApplicationPartsAssemblyInfo.cache
+/Users/dalvin/Developer/ITLA-shits/Team_D-P.3/Sistema de citas médicas/Sistema de citas médicas/obj/Release/net8.0/Sistema de citas médicas..RazorAssemblyInfo.cache
+/Users/dalvin/Developer/ITLA-shits/Team_D-P.3/Sistema de citas médicas/Sistema de citas médicas/obj/Release/net8.0/Sistema de citas médicas..RazorAssemblyInfo.cs
+/Users/dalvin/Developer/ITLA-shits/Team_D-P.3/Sistema de citas médicas/Sistema de citas médicas/obj/Release/net8.0/Sistema de citas médicas..sourcelink.json

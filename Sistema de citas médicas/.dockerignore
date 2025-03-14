@@ -1,0 +1,24 @@
+# Directorios de Visual Studio / Rider
+.vs/
+.idea/
+
+# Directorios de salida de compilación
+**/bin/
+**/obj/
+
+# Archivos de entorno local
+**/.env
+
+# Docker
+**/Dockerfile
+**/.dockerignore
+**/docker-compose*
+
+# Git
+**/.git/
+**/.gitignore
+
+# Otros
+**/*.md
+**/*.log
+**/*.user 
