@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Registrar";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" asp-action="Registrar" class="needs-validation" novalidate>
+    <div class="row">
+        <!-- Nombre -->
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                <div class="invalid-feedback">
+                    Por favor ingresa tu nombre completo.
+                </div>
+            </div>
+        </div>
+
+        <!-- Correo Electrónico -->
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="correo" name="correo" required>
+                <div class="invalid-feedback">
+                    Por favor ingresa un correo electrónico válido.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Teléfono -->
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" required pattern="^\d{10}$">
+                <div class="invalid-feedback">
+                    El número de teléfono debe tener 10 dígitos.
+                </div>
+            </div>
+        </div>
+
+        <!-- Contraseña -->
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label for="contraseña" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="contraseña" name="contraseña" required minlength="8">
+                <div class="invalid-feedback">
+                    La contraseña debe tener al menos 8 caracteres.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón de Enviar -->
+    <button type="submit" class="btn btn-primary w-100">Registrar</button>
+</form>
+
+<script>
+    // Habilitar la validación de Bootstrap
+    (function () {
+        'use strict';
+        var forms = document.querySelectorAll('.needs-validation');
+        Array.prototype.slice.call(forms).forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    })();
+</script>

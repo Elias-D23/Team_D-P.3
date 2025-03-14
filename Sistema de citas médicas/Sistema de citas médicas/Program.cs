@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Sistema_de_citas_médicas_.Data;
+using Sistema_de_citas_médicas_.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ builder.Services.AddDbContext<CitaMedicaContext>(options => {
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<CorreoService>();
+
 
 var app = builder.Build();
 

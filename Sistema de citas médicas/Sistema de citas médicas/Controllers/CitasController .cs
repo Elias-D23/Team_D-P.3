@@ -16,22 +16,22 @@ namespace Sistema_de_citas_médicas_.Controllers
 
         public IActionResult Index()
         {
-            // Obtener todos los clientes con sus citas relacionadas
-            var clientes = _context.Clientes.Include(c => c.Citas).ToList();
+            // Obtener todos los pacientes con sus citas relacionadas
+            var pacientes = _context.Pacientes.Include(c => c.Citas).ToList();
 
             // Crear una lista de ViewModels
-            var clientesCitas = new List<ClienteCitasViewModel>();
-            foreach (var cliente in clientes)
+            var pacientesCitas = new List<PacienteCitasViewModel>();
+            foreach (var paciente in pacientes)
             {
-                clientesCitas.Add(new ClienteCitasViewModel
+                pacientesCitas.Add(new PacienteCitasViewModel
                 {
-                    Cliente = cliente,
-                    Citas = cliente.Citas
+                    Paciente = paciente,
+                    Citas = paciente.Citas
                 });
             }
 
             // Pasar la lista de ViewModels a la vista
-            return View(clientesCitas);
+            return View(pacientesCitas);
         }
     }
 }
