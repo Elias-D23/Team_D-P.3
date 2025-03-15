@@ -9,7 +9,6 @@ namespace sistemaDeCitasMedicas.Data
     {
         public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<Cita> Citas { get; set; }
-        public DbSet<Medico> Medicos { get; set; }
 
         public CitaMedicaContext(DbContextOptions<CitaMedicaContext> options) : base(options) { } // Constructor que recibe DbContextOptions
 

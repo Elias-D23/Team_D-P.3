@@ -48,29 +48,6 @@ namespace sistemaDeCitasMedicas.Migrations
                     b.ToTable("Citas");
                 });
 
-            modelBuilder.Entity("sistemaDeCitasMedicas.Models.Medico", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Especialidad")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("HorarioDisponible")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Medicos");
-                });
-
             modelBuilder.Entity("sistemaDeCitasMedicas.Models.Paciente", b =>
                 {
                     b.Property<int>("id")
