@@ -1,14 +1,23 @@
 using Microsoft.EntityFrameworkCore;
 using Sistema_de_citas_médicas_.Data;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//Connection DB.
+// Configuración de la conexión a la base de datos SQLite
 builder.Services.AddDbContext<CitaMedicaContext>(options =>
 {
     options.UseSqlite(builder.Configuration.GetConnectionString("ConnectionSQL"));
 });
 
+// Añadir servicios de sesión
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -22,7 +31,7 @@ using (var scope = app.Services.CreateScope())
 
     try
     {
-        // Crear la base de datos si no existe y aplicar migraciones
+        // Crear la base de datos si no existe
         db.Database.EnsureCreated();
         Console.WriteLine("Base de datos SQLite creada exitosamente.");
     }
@@ -46,6 +55,9 @@ if (!app.Environment.IsDevelopment())
 app.UseStaticFiles();
 
 app.UseRouting();
+
+// Usar sesiones antes de la autorización
+app.UseSession();
 
 app.UseAuthorization();
 
