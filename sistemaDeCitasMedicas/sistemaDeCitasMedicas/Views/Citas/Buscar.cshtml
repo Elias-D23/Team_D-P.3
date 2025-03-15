@@ -1,0 +1,83 @@
+﻿@model List<sistemaDeCitasMedicas.Models.Medico>
+
+@{
+    ViewData["Title"] = "Buscar Medicos";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-3">Buscar Medicos</h2>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label for="especialidadFiltro" class="form-label">Especialidad:</label>
+            <select id="especialidadFiltro" class="form-select">
+                <option value="">Todas</option>
+                @foreach (var especialidad in ViewBag.Especialidades)
+                {
+                    <option value="@especialidad">@especialidad</option>
+                }
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label for="horarioFiltro" class="form-label">Horario:</label>
+            <select id="horarioFiltro" class="form-select">
+                <option value="">Todos</option>
+                @foreach (var horario in ViewBag.Horarios)
+                {
+                    <option value="@horario">@horario</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Especialidad</th>
+                <th>Horario</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody id="tablaMedicos">
+            @foreach (var medico in Model)
+            {
+                <tr class="medico-row" data-especialidad="@medico.Especialidad" data-horario="@medico.HorarioDisponible">
+                    <td>@medico.Nombre</td>
+                    <td>@medico.Especialidad</td>
+                    <td>@medico.HorarioDisponible</td>
+                    <td>
+                        <a href="@Url.Action("Agendar", "Citas", new { medicoId = medico.Id })" class="btn btn-primary">
+                            Agendar Cita
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#especialidadFiltro, #horarioFiltro").on("change", function () {
+                var filtroEspecialidad = $("#especialidadFiltro").val().toLowerCase();
+                var filtroHorario = $("#horarioFiltro").val().toLowerCase();
+
+                $(".medico-row").each(function () {
+                    var especialidad = $(this).data("especialidad").toLowerCase();
+                    var horario = $(this).data("horario").toLowerCase();
+
+                    if ((filtroEspecialidad === "" || especialidad === filtroEspecialidad) &&
+                        (filtroHorario === "" || horario.includes(filtroHorario))) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script>
+}

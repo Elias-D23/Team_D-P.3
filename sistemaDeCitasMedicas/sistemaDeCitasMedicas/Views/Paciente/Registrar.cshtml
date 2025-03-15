@@ -1,0 +1,25 @@
+﻿@model sistemaDeCitasMedicas.Models.Paciente
+
+@{
+    ViewData["Title"] = "Registro de Paciente";
+}
+
+<h2>Registro de Paciente</h2>
+
+<form asp-action="Registrar" method="post">
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="CorreoElectronico"></label>
+        <input asp-for="CorreoElectronico" type="email" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="Contrasena"></label>
+        <input asp-for="Contrasena" type="password" class="form-control" required />
+    </div>
+
+    @* AGREGAR DEMAS CAMPOS REQUERIDOS *@
+    <button type="submit" class="btn btn-primary">Registrarse</button>
+</form>

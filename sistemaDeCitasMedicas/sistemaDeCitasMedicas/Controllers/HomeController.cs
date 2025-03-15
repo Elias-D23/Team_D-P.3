@@ -4,6 +4,7 @@ using System.Diagnostics;
 
 namespace sistemaDeCitasMedicas.Controllers
 {
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

@@ -76,5 +76,22 @@ namespace sistemaDeCitasMedicas.Controllers
 
             return View(model); // Retorna la vista en caso de error de validación
         }
+        public IActionResult Buscar()
+        {
+            var medicos = _context.Medicos.ToList();
+            return View(medicos);
+        }
+
+        public IActionResult Agendar(int medicoId)
+        {
+            var medico = _context.Medicos.Find(medicoId);
+            if (medico == null)
+            {
+                return NotFound();
+            }
+
+            return View(medico); // Aquí puedes mostrar una vista con los detalles de la cita
+        }
     }
 }
+
