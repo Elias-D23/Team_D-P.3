@@ -1,0 +1,109 @@
+@model Sistema_de_citas_médicas.Models.Medico
+
+@{
+    ViewData["Title"] = "Detalles del Médico";
+}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Inicio</a></li>
+            <li class="breadcrumb-item"><a asp-action="Buscar">Médicos</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@Model.Nombre</li>
+        </ol>
+    </nav>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="@(string.IsNullOrEmpty(Model.UrlFoto) ? "/img/doctor-default.png" : Model.UrlFoto)" 
+                         class="img-fluid rounded-circle mb-3" 
+                         style="width: 200px; height: 200px; object-fit: cover;" 
+                         alt="@Model.Nombre">
+                    <div class="mt-3">
+                        <a asp-controller="Citas" asp-action="Agendar" asp-route-medicoId="@Model.Id" class="btn btn-success btn-lg w-100">
+                            <i class="bi bi-calendar-plus"></i> Agendar Cita
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="mb-3">@Model.Nombre</h2>
+                    <div class="mb-3">
+                        <span class="badge bg-primary fs-6 me-2">@Model.Especialidad</span>
+                        @if (Model.Disponible)
+                        {
+                            <span class="badge bg-success fs-6">Disponible</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger fs-6">No Disponible</span>
+                        }
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <p><i class="bi bi-award text-primary me-2"></i><strong>Experiencia:</strong> @Model.AnosExperiencia años</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><i class="bi bi-card-text text-primary me-2"></i><strong>Licencia:</strong> @Model.NumeroLicencia</p>
+                        </div>
+                    </div>
+                    <h5 class="mb-2">Acerca del médico</h5>
+                    <p class="fs-6">@(string.IsNullOrEmpty(Model.Descripcion) ? "No hay información disponible sobre este médico." : Model.Descripcion)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Horarios Disponibles</h4>
+        </div>
+        <div class="card-body">
+            @if (Model.Horarios != null && Model.Horarios.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Día</th>
+                                <th>Horario</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var horario in Model.Horarios.OrderBy(h => (int)h.DiaSemana))
+                            {
+                                <tr>
+                                    <td>@horario.DiaSemana.ToString()</td>
+                                    <td>@horario.HoraInicio.ToString(@"hh\:mm") - @horario.HoraFin.ToString(@"hh\:mm")</td>
+                                    <td>
+                                        <a asp-controller="Citas" asp-action="Agendar" 
+                                           asp-route-medicoId="@Model.Id" 
+                                           asp-route-horarioId="@horario.Id" 
+                                           class="btn btn-sm btn-outline-primary">
+                                            <i class="bi bi-calendar-plus"></i> Agendar
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-info">
+                    <i class="bi bi-info-circle-fill me-2"></i>
+                    No hay horarios disponibles para este médico.
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <a asp-action="Buscar" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Volver a la búsqueda
+        </a>
+    </div>
+</div> 
