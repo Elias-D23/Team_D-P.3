@@ -1,56 +1,57 @@
 ﻿@model List<sistemaDeCitasMedicas.Models.Medico>
 
 @{
-    ViewData["Title"] = "Buscar Medicos";
+    ViewData["Title"] = "Buscar Citas";
 }
 
 <div class="container mt-4">
-    <h2 class="mb-3">Buscar Medicos</h2>
+    <h2 class="mb-3">Buscar Citas</h2>
 
-    <div class="row mb-3">
-        <div class="col-md-6">
-            <label for="especialidadFiltro" class="form-label">Especialidad:</label>
-            <select id="especialidadFiltro" class="form-select">
-                <option value="">Todas</option>
-                @foreach (var especialidad in ViewBag.Especialidades)
-                {
-                    <option value="@especialidad">@especialidad</option>
-                }
-            </select>
-        </div>
+    <!-- Formulario de filtro -->
+    <form method="get" class="form-inline">
+        <label for="especialidadFiltro">Especialidad:</label>
+        <select name="especialidad" id="especialidadFiltro">
+            <option value="">Seleccione una especialidad</option>
+            @foreach (var item in ViewBag.Especialidades)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
 
-        <div class="col-md-6">
-            <label for="horarioFiltro" class="form-label">Horario:</label>
-            <select id="horarioFiltro" class="form-select">
-                <option value="">Todos</option>
-                @foreach (var horario in ViewBag.Horarios)
-                {
-                    <option value="@horario">@horario</option>
-                }
-            </select>
-        </div>
-    </div>
+        <label for="horarioFiltro">Tanda:</label>
+        <select name="tanda" id="horarioFiltro">
+            <option value="">Seleccione una tanda</option>
+            @foreach (var item in ViewBag.Tandas)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
 
-    <table class="table table-striped">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <!-- Tabla de médicos -->
+    <table class="table mt-3">
         <thead>
             <tr>
                 <th>Nombre</th>
                 <th>Especialidad</th>
-                <th>Horario</th>
-                <th>Acción</th>
+                <th>Descripción</th>
+                <th>Tandas Disponibles</th>
             </tr>
         </thead>
-        <tbody id="tablaMedicos">
+        <tbody>
             @foreach (var medico in Model)
             {
-                <tr class="medico-row" data-especialidad="@medico.Especialidad" data-horario="@medico.HorarioDisponible">
+                <tr class="medico-row" data-especialidad="@medico.Especialidad" data-horario="@string.Join(", ", medico.MedicoDisponibilidades.Select(md => md.Disponibilidad.Tanda))">
                     <td>@medico.Nombre</td>
                     <td>@medico.Especialidad</td>
-                    <td>@medico.HorarioDisponible</td>
+                    <td>@medico.Descripcion</td>
                     <td>
-                        <a href="@Url.Action("Agendar", "Citas", new { medicoId = medico.Id })" class="btn btn-primary">
-                            Agendar Cita
-                        </a>
+                        @foreach (var disponibilidad in medico.MedicoDisponibilidades)
+                        {
+                            <p>@disponibilidad.Disponibilidad.Tanda: @disponibilidad.Disponibilidad.DiaSemana</p>
+                        }
                     </td>
                 </tr>
             }
@@ -62,16 +63,18 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
+            // Filtrar según especialidad y tanda
             $("#especialidadFiltro, #horarioFiltro").on("change", function () {
                 var filtroEspecialidad = $("#especialidadFiltro").val().toLowerCase();
                 var filtroHorario = $("#horarioFiltro").val().toLowerCase();
 
                 $(".medico-row").each(function () {
                     var especialidad = $(this).data("especialidad").toLowerCase();
-                    var horario = $(this).data("horario").toLowerCase();
+                    var horarios = $(this).data("horario").toLowerCase();
 
-                    if ((filtroEspecialidad === "" || especialidad === filtroEspecialidad) &&
-                        (filtroHorario === "" || horario.includes(filtroHorario))) {
+                    // Mostrar fila si cumple con los filtros seleccionados
+                    if ((filtroEspecialidad === "" || especialidad.includes(filtroEspecialidad)) &&
+                        (filtroHorario === "" || horarios.includes(filtroHorario))) {
                         $(this).show();
                     } else {
                         $(this).hide();

@@ -1,25 +1,160 @@
-﻿@model sistemaDeCitasMedicas.Models.Paciente
+﻿@model sistemaDeCitasMedicas.Models.ViewModels.RegistroViewModel
 
 @{
     ViewData["Title"] = "Registro de Paciente";
 }
 
-<h2>Registro de Paciente</h2>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="text-center mb-0">Crear una nueva cuenta</h2>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Registrar" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-<form asp-action="Registrar" method="post">
-    <div class="form-group">
-        <label asp-for="Nombre"></label>
-        <input asp-for="Nombre" class="form-control" required />
-    </div>
-    <div class="form-group">
-        <label asp-for="CorreoElectronico"></label>
-        <input asp-for="CorreoElectronico" type="email" class="form-control" required />
-    </div>
-    <div class="form-group">
-        <label asp-for="Contrasena"></label>
-        <input asp-for="Contrasena" type="password" class="form-control" required />
-    </div>
+                        <!-- Nombre y Cédula -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Nombre" class="control-label"></label>
+                                    <input asp-for="Nombre" class="form-control" placeholder="Ingrese su nombre completo" required />
+                                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Cedula" class="control-label"></label>
+                                    <input asp-for="Cedula" class="form-control" placeholder="Formato: XXX-XXXXXXX-X" required />
+                                    <span asp-validation-for="Cedula" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
 
-    @* AGREGAR DEMAS CAMPOS REQUERIDOS *@
-    <button type="submit" class="btn btn-primary">Registrarse</button>
-</form>
+                        <!-- Fecha de Nacimiento y Teléfono -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="FechaNacimiento" class="control-label"></label>
+                                    <input asp-for="FechaNacimiento" class="form-control" type="date" required />
+                                    <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Telefono" class="control-label"></label>
+                                    <input asp-for="Telefono" class="form-control" placeholder="Formato: XXX-XXX-XXXX" required />
+                                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Correo Electrónico y Contraseña -->
+                        <div class="form-group mb-3">
+                            <label asp-for="CorreoElectronico" class="control-label"></label>
+                            <input asp-for="CorreoElectronico" type="email" class="form-control" placeholder="Ingrese su correo electrónico" required />
+                            <span asp-validation-for="CorreoElectronico" class="text-danger"></span>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Contrasena" class="control-label"></label>
+                                    <input asp-for="Contrasena" type="password" class="form-control" placeholder="Mínimo 6 caracteres" required />
+                                    <span asp-validation-for="Contrasena" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                        <!-- Aceptación de Términos -->
+                        <div class="form-group mb-4">
+                            <div class="form-check">
+                                <input asp-for="AceptaTerminos" class="form-check-input" type="checkbox" required />
+                                <label asp-for="AceptaTerminos" class="form-check-label">
+                                    Acepto los <a href="#" data-bs-toggle="modal" data-bs-target="#terminosModal">términos y condiciones</a>
+                                </label>
+                                <span asp-validation-for="AceptaTerminos" class="text-danger d-block"></span>
+                            </div>
+                        </div>
+
+                        <!-- Botones -->
+                        <div class="form-group d-flex justify-content-between align-items-center">
+                            <a asp-controller="Account" asp-action="Login" class="btn btn-link">¿Ya tiene una cuenta? Inicie sesión</a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-person-plus"></i> Registrarme
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Términos y Condiciones -->
+<div class="modal fade" id="terminosModal" tabindex="-1" aria-labelledby="terminosModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="terminosModalLabel">Términos y Condiciones</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4>Términos y Condiciones de Uso del Sistema de Citas Médicas</h4>
+                <p>Al utilizar nuestro sistema de citas médicas, usted acepta los siguientes términos y condiciones:</p>
+
+                <h5>1. Información Personal</h5>
+                <p>La información proporcionada durante el registro debe ser precisa y verídica. Usted es responsable de mantener actualizada su información personal.</p>
+
+                <h5>2. Uso del Servicio</h5>
+                <p>El sistema está diseñado exclusivamente para agendar citas médicas. Cualquier uso indebido resultará en la suspensión de su cuenta.</p>
+
+                <h5>3. Privacidad</h5>
+                <p>Respetamos su privacidad. Su información personal será utilizada únicamente para los fines establecidos en nuestra política de privacidad.</p>
+
+                <h5>4. Cancelación de Citas</h5>
+                <p>Las citas deben cancelarse con al menos 24 horas de anticipación. Las cancelaciones repetidas sin previo aviso pueden resultar en restricciones en su cuenta.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                        onclick="document.getElementById('AceptaTerminos').checked = true;">
+                    Aceptar Términos
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // JavaScript para mejorar la experiencia del usuario
+        $(document).ready(function () {
+            // Formatear automáticamente la cédula mientras se escribe
+            $("#Cedula").on("input", function () {
+                let value = $(this).val().replace(/\D/g, '');
+                if (value.length > 3) {
+                    value = value.substring(0, 3) + "-" + value.substring(3);
+                }
+                if (value.length > 11) {
+                    value = value.substring(0, 11) + "-" + value.substring(11, 12);
+                }
+                $(this).val(value);
+            });
+
+            // Formatear automáticamente el teléfono mientras se escribe
+            $("#Telefono").on("input", function () {
+                let value = $(this).val().replace(/\D/g, '');
+                if (value.length > 3) {
+                    value = value.substring(0, 3) + "-" + value.substring(3);
+                }
+                if (value.length > 7) {
+                    value = value.substring(0, 7) + "-" + value.substring(7, 11);
+                }
+                $(this).val(value);
+            });
+        });
+    </script>
+}
