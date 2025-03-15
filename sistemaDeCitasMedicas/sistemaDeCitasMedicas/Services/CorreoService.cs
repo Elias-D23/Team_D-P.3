@@ -6,34 +6,39 @@ namespace sistemaDeCitasMedicas.Services
 {
     public class CorreoService
     {
-        // Datos de configuración dentro de la clase
-        private readonly string _emailRemitente = "no-reply@hospital.com";  // Correo del remitente
-        private readonly string _smtpServer = "sandbox.smtp.mailtrap.io"; // Servidor SMTP de Mailtrap
-        private readonly int _smtpPort = 587;  // Puerto SMTP para TLS
-        private readonly string _smtpUsername = "2fa3dde51fc932";  // Usuario de Mailtrap
-        private readonly string _smtpPassword = "832ccafe3237a8";  // Contraseña de Mailtrap
-        private readonly string _urlConfirmacion = "http://localhost:5000/confirmar";  // URL de confirmación (puedes cambiarla si es necesario)
+        private readonly string _emailRemitente = "frefroigoicaki-7188@yopmail.com";
+        private readonly string _smtpServer = "sandbox.smtp.mailtrap.io";
+        private readonly int _smtpPort = 587;
+        private readonly string _smtpUsername = "f5857a92c521e4";
+        private readonly string _smtpPassword = "1a7f7dc9c98034";
+        private readonly string _urlConfirmacion = "http://localhost:5000/confirmar";
 
-        // Método para enviar el correo de confirmación
         public void EnviarCorreoConfirmacion(string correo, string token)
         {
-            // Crear el mensaje MIME
             var mensaje = new MimeMessage();
-            mensaje.From.Add(new MailboxAddress("Sistema de Citas", _emailRemitente));  // Remitente
-            mensaje.To.Add(new MailboxAddress("", correo));  // Destinatario
-            mensaje.Subject = "Confirma tu correo";  // Asunto del correo
-            mensaje.Body = new TextPart("plain")  // Cuerpo del correo
+            mensaje.From.Add(new MailboxAddress("Sistema de Citas", _emailRemitente));
+            mensaje.To.Add(new MailboxAddress("", correo));
+            mensaje.Subject = "Confirma tu correo";
+            mensaje.Body = new TextPart("plain")
             {
                 Text = $"Haz clic en este enlace para confirmar: {_urlConfirmacion}?token={token}"
             };
 
-            // Configurar y enviar el correo a través del servidor SMTP
-            using (var smtp = new SmtpClient())
+            try
             {
-                smtp.Connect(_smtpServer, _smtpPort, false);  // Conectar al servidor SMTP
-                smtp.Authenticate(_smtpUsername, _smtpPassword);  // Autenticación SMTP
-                smtp.Send(mensaje);  // Enviar el mensaje
-                smtp.Disconnect(true);  // Desconectar
+                using (var smtp = new SmtpClient())
+                {
+                    smtp.Connect(_smtpServer, _smtpPort, false);
+                    smtp.Authenticate(_smtpUsername, _smtpPassword);
+                    smtp.Send(mensaje);
+                    smtp.Disconnect(true);
+                    Console.WriteLine("Correo enviado exitosamente");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al enviar el correo: {ex.Message}");
+                throw new Exception("Error al enviar el correo de confirmación.");
             }
         }
     }

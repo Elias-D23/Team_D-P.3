@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using sistemaDeCitasMedicas.Data;
-using Microsoft.EntityFrameworkCore; //
+using Microsoft.EntityFrameworkCore;
 using sistemaDeCitasMedicas.Models;
-using System.Linq; //
-using System.Threading.Tasks; //
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace sistemaDeCitasMedicas.Controllers
 {
@@ -16,27 +16,83 @@ namespace sistemaDeCitasMedicas.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index(string especialidad, string horario)
+        // Acción para mostrar los médicos, con filtros de especialidad y tanda
+        public async Task<IActionResult> Buscar(string especialidad, string tanda)
         {
-            var medicos = _context.Medicos.AsQueryable();
+            var query = _context.Medicos
+                .Include(m => m.MedicoDisponibilidades)
+                .ThenInclude(md => md.Disponibilidad)
+                .AsQueryable();
 
             if (!string.IsNullOrEmpty(especialidad))
             {
-                medicos = medicos.Where(m => m.Especialidad == especialidad);
+                query = query.Where(m => m.Especialidad.Contains(especialidad));
             }
 
-            if (!string.IsNullOrEmpty(horario))
+            if (!string.IsNullOrEmpty(tanda))
             {
-                medicos = medicos.Where(m => m.HorarioDisponible.Contains(horario));
+                query = query.Where(m => m.MedicoDisponibilidades
+                                         .Any(md => md.Disponibilidad.Tanda.Contains(tanda)));
             }
 
+            var medicos = await query.ToListAsync();
             var especialidades = await _context.Medicos.Select(m => m.Especialidad).Distinct().ToListAsync();
-            var horarios = new[] { "Mañana", "Tarde", "Noche" };
+            var tandas = new[] { "Mañana", "Tarde", "Noche" };
 
             ViewBag.Especialidades = especialidades;
-            ViewBag.Horarios = horarios;
+            ViewBag.Tandas = tandas;
 
-            return View(await medicos.ToListAsync());
+            return View(medicos);
+        }
+
+
+        // Acción para buscar médicos con nombre, especialidad y disponibilidad
+        public async Task<IActionResult> Buscar(string nombreMedico, string especialidad, string tanda)
+        {
+            var query = _context.Medicos
+                .Include(m => m.MedicoDisponibilidades)
+                .ThenInclude(md => md.Disponibilidad)
+                .AsQueryable();
+
+            if (!string.IsNullOrEmpty(nombreMedico))
+            {
+                query = query.Where(m => m.Nombre.Contains(nombreMedico));
+            }
+
+            if (!string.IsNullOrEmpty(especialidad))
+            {
+                query = query.Where(m => m.Especialidad == especialidad);
+            }
+
+            if (!string.IsNullOrEmpty(tanda))
+            {
+                query = query.Where(m => m.MedicoDisponibilidades
+                                         .Any(md => md.Disponibilidad.Tanda == tanda));
+            }
+
+            var medicos = await query.ToListAsync();
+            return View(medicos);
+        }
+
+        // Detalle de un médico específico
+        public async Task<IActionResult> Detalles(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var medico = await _context.Medicos
+                .Include(m => m.MedicoDisponibilidades)
+                .ThenInclude(md => md.Disponibilidad)
+                .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (medico == null)
+            {
+                return NotFound();
+            }
+
+            return View(medico);
         }
     }
 }
