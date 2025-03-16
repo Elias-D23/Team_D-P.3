@@ -1,0 +1,112 @@
+﻿@model sistemaDeCitasMedicas.Models.PacienteCitasViewModel
+
+<h2>Información del Paciente</h2>
+<p><strong>Nombre:</strong> @Model.Paciente.Nombre</p>
+<p><strong>Cédula:</strong> @Model.Paciente.Cedula</p>
+<p><strong>Fecha de Nacimiento:</strong> @Model.Paciente.FechaNacimiento.ToShortDateString()</p>
+<p><strong>Teléfono:</strong> @Model.Paciente.Telefono</p>
+<p><strong>Correo Electrónico:</strong> @Model.Paciente.CorreoElectronico</p>
+
+<h3>Citas</h3>
+
+@if (Model.Citas != null && Model.Citas.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Fecha y Hora</th>
+                <th>Médico</th>
+                <th>Especialidad</th>
+                <th>Requisitos Especiales</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cita in Model.Citas)
+            {
+                <tr>
+                    <td>@cita.FechaHora.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@cita.Medico</td>
+                    <td>@cita.Especialidad</td>
+                    <td>@cita.RequisitosEspeciales</td>
+                    <td>
+                        <!-- Botón Editar -->
+                        <a asp-action="EditarCita" asp-controller="Citas" asp-route-id="@cita.id" class="btn btn-primary btn-sm">Editar</a>
+
+                        <!-- Botón Eliminar -->
+                        <form asp-action="EliminarCita" asp-controller="Citas" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@cita.id" />
+                            <input type="hidden" name="pacienteId" value="@Model.Paciente.id" />
+                            <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Este paciente no tiene citas registradas.</p>
+}
+
+<!-- El botón "Agregar Cita" siempre está visible -->
+<a asp-action="AgregarCita" asp-controller="Citas" asp-route-pacienteId="@Model.Paciente.id" class="btn btn-success">Agregar Cita</a>
+
+
+
+
+@*
+@model sistemaDeCitasMedicas.Models.PacienteCitasViewModel
+
+<h2>Información del Paciente</h2>
+<p><strong>Nombre:</strong> @Model.Paciente.Nombre</p>
+<p><strong>Cédula:</strong> @Model.Paciente.Cedula</p>
+<p><strong>Fecha de Nacimiento:</strong> @Model.Paciente.FechaNacimiento.ToShortDateString()</p>
+<p><strong>Teléfono:</strong> @Model.Paciente.Telefono</p>
+<p><strong>Correo Electrónico:</strong> @Model.Paciente.CorreoElectronico</p>
+
+<h3>Citas</h3>
+
+@if (Model.Citas != null && Model.Citas.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Fecha y Hora</th>
+                <th>Médico</th>
+                <th>Especialidad</th>
+                <th>Requisitos Especiales</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cita in Model.Citas)
+            {
+                <tr>
+                    <td>@cita.FechaHora.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@cita.Medico</td>
+                    <td>@cita.Especialidad</td>
+                    <td>@cita.RequisitosEspeciales</td>
+                    <td>
+                        <!-- Botón Editar -->
+                        <a asp-action="EditarCita" asp-controller="Citas" asp-route-id="@cita.id" class="btn btn-primary btn-sm">Editar</a>
+
+                        <!-- Botón Eliminar -->
+                        <form asp-action="EliminarCita" asp-controller="Citas" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@cita.id" />
+                            <input type="hidden" name="pacienteId" value="@Model.Paciente.id" />
+                            <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Este paciente no tiene citas registradas.</p>
+    <a asp-action="AgregarCita" asp-controller="Citas" asp-route-pacienteId="@Model.Paciente.id" class="btn btn-success">Agregar Cita</a>
+}
+*@
