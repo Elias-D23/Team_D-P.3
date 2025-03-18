@@ -1,0 +1,28 @@
+﻿@model sistemaDeCitasMedicas.Models.Cita
+
+<h2>Editar Cita</h2>
+
+<form asp-action="EditarCita" asp-controller="Citas" method="post">
+    <input type="hidden" asp-for="id" />
+    <input type="hidden" asp-for="PacienteId" />
+
+    <div class="form-group">
+        <label>Fecha y Hora:</label>
+        <input type="datetime-local" asp-for="FechaHora" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Médico:</label>
+        <input type="text" asp-for="Medico" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Especialidad:</label>
+        <input type="text" asp-for="Especialidad" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Requisitos Especiales:</label>
+        <textarea asp-for="RequisitosEspeciales" class="form-control"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+    <a asp-action="Info" asp-controller="Citas" asp-route-id="@Model.PacienteId" class="btn btn-secondary">Cancelar</a>
+</form>
