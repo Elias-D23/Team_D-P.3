@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj": {}
+    "C:\\Users\\zelid\\source\\repos\\SistemaDeCitasMedicas\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj": {
+    "C:\\Users\\zelid\\source\\repos\\SistemaDeCitasMedicas\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj",
+        "projectUniqueName": "C:\\Users\\zelid\\source\\repos\\SistemaDeCitasMedicas\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj",
         "projectName": "sistemaDeCitasMedicas",
-        "projectPath": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj",
-        "packagesPath": "C:\\Users\\elias\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\obj\\",
+        "projectPath": "C:\\Users\\zelid\\source\\repos\\SistemaDeCitasMedicas\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj",
+        "packagesPath": "C:\\Users\\zelid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zelid\\source\\repos\\SistemaDeCitasMedicas\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\elias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zelid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.310/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
