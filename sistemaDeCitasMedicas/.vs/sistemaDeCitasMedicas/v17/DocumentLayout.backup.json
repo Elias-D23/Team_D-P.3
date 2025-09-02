@@ -3,48 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|c:\\users\\elias\\c#practices\\sistemadecitasmedicas\\sistemadecitasmedicas\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|solutionrelative:sistemadecitasmedicas\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|c:\\users\\elias\\c#practices\\sistemadecitasmedicas\\sistemadecitasmedicas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|solutionrelative:sistemadecitasmedicas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|c:\\users\\elias\\c#practices\\sistemadecitasmedicas\\sistemadecitasmedicas\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|solutionrelative:sistemadecitasmedicas\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|c:\\users\\elias\\c#practices\\sistemadecitasmedicas\\sistemadecitasmedicas\\views\\citas\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|solutionrelative:sistemadecitasmedicas\\views\\citas\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|c:\\users\\elias\\c#practices\\sistemadecitasmedicas\\sistemadecitasmedicas\\views\\citas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|solutionrelative:sistemadecitasmedicas\\views\\citas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|c:\\users\\elias\\c#practices\\sistemadecitasmedicas\\sistemadecitasmedicas\\models\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|solutionrelative:sistemadecitasmedicas\\models\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|c:\\users\\elias\\c#practices\\sistemadecitasmedicas\\sistemadecitasmedicas\\views\\citas\\editarpaciente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|solutionrelative:sistemadecitasmedicas\\views\\citas\\editarpaciente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|c:\\users\\elias\\c#practices\\sistemadecitasmedicas\\sistemadecitasmedicas\\views\\citas\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|solutionrelative:sistemadecitasmedicas\\views\\citas\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|c:\\users\\elias\\c#practices\\sistemadecitasmedicas\\sistemadecitasmedicas\\models\\pacientecitasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|solutionrelative:sistemadecitasmedicas\\models\\pacientecitasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|c:\\users\\elias\\c#practices\\sistemadecitasmedicas\\sistemadecitasmedicas\\views\\citas\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|solutionrelative:sistemadecitasmedicas\\views\\citas\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|c:\\users\\elias\\c#practices\\sistemadecitasmedicas\\sistemadecitasmedicas\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|solutionrelative:sistemadecitasmedicas\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|c:\\users\\elias\\c#practices\\sistemadecitasmedicas\\sistemadecitasmedicas\\models\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|solutionrelative:sistemadecitasmedicas\\models\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|c:\\users\\elias\\c#practices\\sistemadecitasmedicas\\sistemadecitasmedicas\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{359472E7-0010-4F23-AF16-B92F3A2F5B81}|sistemaDeCitasMedicas\\sistemaDeCitasMedicas.csproj|solutionrelative:sistemadecitasmedicas\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,136 +30,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "sistemaDeCitasMedicas\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "sistemaDeCitasMedicas\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-16T16:32:02.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "sistemaDeCitasMedicas\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "sistemaDeCitasMedicas\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-16T16:32:01.941Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "sistemaDeCitasMedicas\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "sistemaDeCitasMedicas\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-16T16:31:54.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Crear.cshtml",
               "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Citas\\Crear.cshtml",
               "RelativeDocumentMoniker": "sistemaDeCitasMedicas\\Views\\Citas\\Crear.cshtml",
               "ToolTip": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Citas\\Crear.cshtml",
               "RelativeToolTip": "sistemaDeCitasMedicas\\Views\\Citas\\Crear.cshtml",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAJcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAACUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-16T15:59:44.512Z"
+              "WhenOpened": "2025-03-16T20:38:48.885Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Info.cshtml",
-              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Citas\\Info.cshtml",
-              "RelativeDocumentMoniker": "sistemaDeCitasMedicas\\Views\\Citas\\Info.cshtml",
-              "ToolTip": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Citas\\Info.cshtml",
-              "RelativeToolTip": "sistemaDeCitasMedicas\\Views\\Citas\\Info.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-16T15:52:06.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EditarPaciente.cshtml",
-              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Citas\\EditarPaciente.cshtml",
-              "RelativeDocumentMoniker": "sistemaDeCitasMedicas\\Views\\Citas\\EditarPaciente.cshtml",
-              "ToolTip": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Citas\\EditarPaciente.cshtml",
-              "RelativeToolTip": "sistemaDeCitasMedicas\\Views\\Citas\\EditarPaciente.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-16T15:48:53.922Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PacienteCitasViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Models\\PacienteCitasViewModel.cs",
-              "RelativeDocumentMoniker": "sistemaDeCitasMedicas\\Models\\PacienteCitasViewModel.cs",
-              "ToolTip": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Models\\PacienteCitasViewModel.cs",
-              "RelativeToolTip": "sistemaDeCitasMedicas\\Models\\PacienteCitasViewModel.cs",
+              "DocumentIndex": 1,
+              "Title": "Cita.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Models\\Cita.cs",
+              "RelativeDocumentMoniker": "sistemaDeCitasMedicas\\Models\\Cita.cs",
+              "ToolTip": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Models\\Cita.cs",
+              "RelativeToolTip": "sistemaDeCitasMedicas\\Models\\Cita.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T15:36:00.686Z"
+              "WhenOpened": "2025-03-16T20:38:40.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Eliminar.cshtml",
-              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Citas\\Eliminar.cshtml",
-              "RelativeDocumentMoniker": "sistemaDeCitasMedicas\\Views\\Citas\\Eliminar.cshtml",
-              "ToolTip": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Citas\\Eliminar.cshtml",
-              "RelativeToolTip": "sistemaDeCitasMedicas\\Views\\Citas\\Eliminar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-16T15:34:17.855Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Paciente.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Models\\Paciente.cs",
-              "RelativeDocumentMoniker": "sistemaDeCitasMedicas\\Models\\Paciente.cs",
-              "ToolTip": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Models\\Paciente.cs",
-              "RelativeToolTip": "sistemaDeCitasMedicas\\Models\\Paciente.cs",
+              "DocumentIndex": 2,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "sistemaDeCitasMedicas\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "sistemaDeCitasMedicas\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T15:08:14.566Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Citas\\Index.cshtml",
-              "RelativeDocumentMoniker": "sistemaDeCitasMedicas\\Views\\Citas\\Index.cshtml",
-              "ToolTip": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Views\\Citas\\Index.cshtml",
-              "RelativeToolTip": "sistemaDeCitasMedicas\\Views\\Citas\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-16T13:55:00.219Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CitasController.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Controllers\\CitasController.cs",
-              "RelativeDocumentMoniker": "sistemaDeCitasMedicas\\Controllers\\CitasController.cs",
-              "ToolTip": "C:\\Users\\elias\\C#Practices\\sistemaDeCitasMedicas\\sistemaDeCitasMedicas\\Controllers\\CitasController.cs",
-              "RelativeToolTip": "sistemaDeCitasMedicas\\Controllers\\CitasController.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAAAJwAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T13:34:34.831Z"
+              "WhenOpened": "2025-03-16T20:38:39.428Z"
             }
           ]
         }
