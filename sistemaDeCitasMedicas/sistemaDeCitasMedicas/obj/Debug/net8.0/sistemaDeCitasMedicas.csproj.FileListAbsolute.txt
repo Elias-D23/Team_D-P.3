@@ -459,11 +459,6 @@ C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaD
 C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\sistemaDeCitasMedicas.sourcelink.json
 C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\staticwebassets\msbuild.sistemaDeCitasMedicas.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\staticwebassets\msbuild.build.sistemaDeCitasMedicas.props
-C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.sistemaDeCitasMedicas.props
-C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.sistemaDeCitasMedicas.props
-C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\scopedcss\bundle\sistemaDeCitasMedicas.styles.css
 C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\scopedcss\projectbundle\sistemaDeCitasMedicas.bundle.scp.css
@@ -473,3 +468,11 @@ C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaD
 C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\sistemaDeCitasMedicas.pdb
 C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\sistemaDeCitasMedicas.genruntimeconfig.cache
 C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\ref\sistemaDeCitasMedicas.dll
+C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\bin\Debug\net8.0\sistemaDeCitasMedicas.staticwebassets.endpoints.json
+C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\zelid\source\repos\SistemaDeCitasMedicas\sistemaDeCitasMedicas\sistemaDeCitasMedicas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
